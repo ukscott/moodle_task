@@ -65,7 +65,7 @@ class home_page extends moodleform {
             $dropdown[$user->id] = fullname($user);
         }
 
-        $mform->addElement('select', 'user_list', "Select User: ", $dropdown, 'style="width:400px" id="user_list"');
+        $mform->addElement('select', 'user_list', "Select User: ", $dropdown, 'width:300px" id="user_list"');
 
         $user_id = optional_param('id', '', PARAM_INT);
 
@@ -81,7 +81,7 @@ class home_page extends moodleform {
             $table->width = '70%';
 
 
-            $table->head = array("S. No","Course Name", "Completion status", "Completed Date");
+            $table->head = array("No","Course Name", "Completion status", "Completed Date");
             $table->align = array('left', 'left', 'left', 'left');
             $table->size = array('10%', '50%', "20%", "20%");
 

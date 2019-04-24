@@ -18,3 +18,7 @@ legend.scheduler-border {
 .custom-select{
  width: 100% !important;
 }
+
+.d-inline{
+    float: right !important;
+}
